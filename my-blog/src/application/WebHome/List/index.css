@@ -1,0 +1,11 @@
+/*.cardStyle{*/
+/*    width: 60%;*/
+/*    margin:20px auto;*/
+/*}*/
+.tags{
+    transition: transform 0.2s ease-out;
+}
+#tags:hover{
+    transform:scale(1.2);
+    cursor:pointer;
+}

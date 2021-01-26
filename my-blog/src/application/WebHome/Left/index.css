@@ -1,0 +1,45 @@
+.cardStyle{
+    width: 450px;
+    height: 400px;
+    margin:20px;
+    cursor:default;
+}
+.admin-info{
+    background: #fff;
+    margin-bottom: 20px;
+}
+    #header{
+    text-align: center;
+    padding: 15px 0 0 0;}
+    #headerImg{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    border-radius: 50%;
+    transition: transform 2s ease-out;}
+    #headerImg:hover{
+     transform: rotateZ(360deg);
+ }
+.admin-name {
+    text-align: center;
+    font-weight: bold;
+    /*padding: 4px 0 0;*/
+    font-size: 2em;
+}
+.admin-desc {
+    text-align: center;
+    padding: 10px 15px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tags{
+    margin:10px;
+    padding: 8px 12px;
+    font-size:18px;
+    transition: transform 0.2s ease-out;
+}
+#tags:hover{
+    transform:scale(1.2);
+    cursor:pointer;
+}
+
