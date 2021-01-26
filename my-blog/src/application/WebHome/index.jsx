@@ -3,6 +3,7 @@ import './index.css'
 import Particles from 'react-particles-js'
 import List from "./List";
 import Left from "./Left"
+import { renderRoutes } from 'react-router-config';
 import {Col,Row} from "antd";
 
 

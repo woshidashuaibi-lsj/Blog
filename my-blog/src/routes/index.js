@@ -5,6 +5,7 @@ const CategoriesComponent = lazy (() => import("../application/categories"));
 const PersonalComponent = lazy (() => import("../application/Personal"));
 const TimeLineComponent = lazy (() => import("../application/TimeLine"));
 const WebHomeComponent = lazy (() => import ("../application/WebHome"));
+const DetailComponent = lazy(()=>import("../application/Detail"))
 // const SingerComponent = lazy (() => import ("./../application/Singer/"));
 // const SearchComponent = lazy (() => import ("./../application/Search/"));
 
@@ -31,13 +32,19 @@ export default [
                 path: "/webHome",
                 exact: true,
                 key: "webHome",
-                component: SuspenseComponent (WebHomeComponent),
+                component: SuspenseComponent(WebHomeComponent),
             },
             {
                 path: "/timeLine",
                 exact: true,
                 key: "timeLine",
-                component: SuspenseComponent (TimeLineComponent),
+                component: SuspenseComponent(TimeLineComponent),
+            },
+            {
+                path: "/detail/:id",
+                exact: true,
+                key: "detail",
+                component: SuspenseComponent(DetailComponent)
             },
             {
                 path: "/categories",

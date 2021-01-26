@@ -3,13 +3,19 @@ import './index.css'
 import {Card, Col, Row,Tag,Divider} from "antd";
 import {color} from "../../../utils";
 import {data} from "../../../utils"
+import { createHashHistory } from 'history';
+
 
 function Lists(props) {
-
+    const history = createHashHistory();
+    console.log(props)
+    const enterDetail = (ids) => {
+        history.push(`/detail/${ids}`)
+    }
     return (
         <div>
             {data.map((item,index) => (
-                    <Card hoverable className="cardStyle" style={{margin:"20 auto",width:"100%",height:240,cursor:'pointer' }} key={index}>
+                    <Card onClick={()=>enterDetail(item.id)} hoverable className="cardStyle" style={{margin:"20 auto",width:"100%",height:240,cursor:'pointer' }} key={index}>
                         <Row justify="space-between">
                             <Col span={16}>
                                 <h1>{item.title}</h1>
